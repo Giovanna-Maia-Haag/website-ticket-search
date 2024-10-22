@@ -1,0 +1,44 @@
+@import url("..//styles/header.css");
+@import url("..//styles/banner.css");
+@import url("..//styles/destinos.populares.cards.css");
+@import url("..//styles/banner.disney.css");
+@import url("..//styles/nacionais.inter.slider.css");
+@import url("..//styles/sobre.empresa.css");
+@import url("..//styles/footer.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Play:wght@400;700&display=swap');
+
+:root {
+    --fonte-secundaria:"Play", sans-serif;
+    --fonte-principal:"Gothic A1", sans-serif;
+    --cinza-claro-do-header:rgb(238, 238, 238);
+    --cinza-escuro-background:rgb(182, 182, 182);
+    --verde:rgb(45, 143, 87);
+    --magenta:rgb(182,0,46);
+    --black:#000;
+
+ }
+ .darkmode {
+    --fonte-secundaria:"Play", sans-serif;
+    --fonte-principal:"Gothic A1", sans-serif;
+    --cinza-claro-do-header:rgb(176, 209, 165);
+    --cinza-escuro-background:rgb(36, 51, 31);
+    --verde:rgb(209, 0, 52);
+    --magenta:rgb(45, 143, 87);
+    --black:#000000;
+ }
+ 
+* {
+    margin: 0;
+    padding: 0;
+    font-size:62.5%; /* 10 px = 1 rem */
+}
+body {
+    height: auto;
+    background-color: var(--cinza-escuro-background);
+}
+html {
+    scroll-behavior: smooth;
+}
+

@@ -1,0 +1,135 @@
+/* SEÇÃO TEXTO DESTINOS POPULARES */
+.cards-populares {
+    height: 7.0rem;
+    display: flex;
+    align-items: center;   
+}
+.cards-populares__title {
+    font-size: 2.5rem;
+    margin-left: 5%;
+    color: var(--magenta);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+/* SLIDES */
+.slider {
+    height: 40.0rem;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track {
+    display: flex;
+    width: calc(20.0rem * 12);
+    animation: scroll 40s linear infinite;
+    
+    height: 40.0rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-20.0rem * 6));
+    }
+}
+.slide {
+    height: 40.0rem;
+    width: 25.0rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    perspective:10.0rem;
+  
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.37);
+    flex-direction: column;
+    background-color: var(--cinza-claro-do-header);
+    transition:  ease-in-out 0.5s;
+
+}
+.slide__image {
+    height: 20.0rem;
+
+    width: 25.0rem;
+    align-self: center;
+    perspective:10.0rem;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+}
+.slide:hover{
+    transform: scale(0.9);
+    z-index: 2;
+}
+/* TEXTO DOS CARDS */
+
+.slide__texto{
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--black);
+}
+
+
+ /* BOTÃO DOS CARDS */
+
+.slide__botao {
+    font-size: 1.8rem;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--magenta);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: var(--cinza-claro-do-header);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width:700px) {
+    .slider {
+        height: 45.0rem;
+    }
+    .slide {
+        height: 45.0rem;
+        width: 30.0rem;
+    }
+    .slide__image {
+        height: 25.0rem;
+        width: 30.0rem;
+    }
+    .slide-track {
+        height: 45.0rem;
+        width: calc(25.0rem * 12);
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-25.0rem * 6));
+        }
+    }
+}
+@media screen and (min-width:1000px) {
+    .slider {
+        width: 80%;
+        height: 45.0rem;
+    }
+    .cards-populares{
+        padding: 2rem 0;
+    }
+    .cards-populares__title {
+        margin: 10%;
+    }
+    .slide__botao:hover {
+        background-color: var(--verde);
+        color: var(--cinza-claro-do-header);
+    }
+}

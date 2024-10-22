@@ -1,0 +1,51 @@
+footer {
+    height: 26.0rem;
+    background-color: var(--cinza-claro-do-header);
+    margin: auto;
+}
+.rodape {
+    height: 15.0rem;
+    background-color: var(--cinza-claro-do-header);
+    padding: 1rem;
+    display: flex;
+}
+.rodape-container {
+    display: flex;
+    flex-direction: column;
+    border-left: 0.1rem solid var(--black);
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+.rodape-container a {
+    font-family: var(--fonte-principal);
+    font-size: 1.6rem;
+    color: var(--black);
+    font-weight: 500;
+}
+.rodape-container a:hover {
+    color: var(--magenta);
+}
+.rodape-logo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 100%;
+    background:var(--cinza-claro-do-header);
+}
+/* LOGO DA AGEM NO RODAPE */
+.rodape-logo p{
+    font-size: 2rem;
+    color: var(--verde);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    padding-left: 1rem;
+}
+.logo__agem-logo-no-footer {
+    height: 4rem;
+    width: auto;
+    display: flex;
+}

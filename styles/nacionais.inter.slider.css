@@ -1,0 +1,110 @@
+/* TITULO VOOS INTERNACIONAIS/NACIONAIS */
+.cards-internacionais-nacionais {
+    height: 7.0rem;
+    display: flex;
+    align-items: center;   
+}
+.cards-internacionais-nacionais__title {
+    font-size: 2.5rem;
+   
+    color: var(--magenta);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+/* SECAO SLIDER E CARDS */
+.container {
+    max-width: 120.0rem;
+    width: 90%;
+    margin: auto;
+}
+
+
+.container__slider-wrapper > .slider-wrapper__image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.container__slider-wrapper > .slider-wrapper__image-list::-webkit-scrollbar {
+    display: none;
+}
+.container__slider-wrapper > .slider-wrapper__image-list > .image-list__items {
+    width: 25.0rem;
+    height: 40.0rem;
+    background-color: var(--cinza-claro-do-header);
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.37);
+}
+/* IMAGENS DOS CARDS E TEXTO */
+.image-item__textos {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 15.0rem;
+}
+.image-item {
+    width: 100%;
+    height: 20.0rem;
+    
+}
+
+@media screen and (min-width:650px) {
+    /* BOTAO */
+.slde-wrapper , .slide-button {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    color: var(--magenta);
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    transform: translateY(-50%);
+
+}
+.slide-button#prev-slide{
+    align-self: center;
+    left: 2%;
+}
+
+.slide-button#next-slide {
+    align-self: center;
+    right: 2%;
+}
+
+}
+
+@media screen and (min-width:700px) {
+    .container__slider-wrapper > .slider-wrapper__image-list > .image-list__items {
+        width: 30.0rem;
+        height: 45.0rem;
+    }
+    .image-item__textos {
+        height: 20.0rem;
+    }
+    .image-item {
+        height: 25.0rem;
+        
+    }
+}
+@media screen and (min-width:1000px) {
+    .container {
+        width: 90%;
+    }
+    .cards-internacionais-nacionais{
+        padding: 2rem 0;
+    }
+    .slide-button#prev-slide {
+        left: 7%;
+    }
+    .slide-button#next-slide {
+        align-self: center;
+        right: 7%;
+    }
+}

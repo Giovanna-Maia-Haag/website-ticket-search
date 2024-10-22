@@ -1,0 +1,50 @@
+.container-sobre-empresa {
+    width: 100%;
+    max-width: 140.0rem;
+    height: fit-content;
+    display: block;
+    margin: auto;
+} 
+.container-sobre-empresa__cards {
+    height:fit-content;
+    width: 80%;
+    max-width: 40.0rem;
+    display: block;
+    margin: auto;
+}
+.cards__item {
+    height: fit-content;
+    background: var(--cinza-escuro-background);
+    border: 0.4rem solid var(--magenta);
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+/* ICONES */
+.item__icone {
+    width: 7rem;
+    align-self: center;
+    justify-self: top;
+}
+/* TEXTO DO CARD */
+.item__texto { 
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    color: var(--magenta);
+    text-align: center;
+}
+
+
+
+@media screen and (min-width:650px) {
+.container-sobre-empresa__cards {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+}

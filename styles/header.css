@@ -1,0 +1,79 @@
+.cabecalho {
+    width: auto;
+    height: 7.0rem;
+    background-color: var(--cinza-claro-do-header);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.cabecalho::-webkit-scrollbar {
+    display: none;
+}
+/* LOGO */
+.cabecalho__logo {
+    height: 4.0rem;
+    width: auto;
+    display: flex;
+    gap: 1rem;
+}
+.logo {
+    height: 3.5rem;
+    width: fit-content;
+}
+/* AGEM */
+.agem-titulo {
+    align-self: center;
+    color: var(--verde);
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: var(--fonte-secundaria);
+}
+/* TEXTOS DO HEADER */
+.cabecalho__texto {
+    gap: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 1.6rem;
+}
+.cabecalho__texto a {
+    width: max-content;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--fonte-principal);
+}
+#trocar-tema {
+    height: 5rem;
+    width: 5rem;
+    padding: 0 1rem;
+    margin-right: 2rem;
+    border-radius: 50% ;
+    border: solid var(--cinza-escuro-background);
+    background-color: var(--cinza-escuro-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#trocar-tema img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+#trocar-tema img:last-child {
+    display: none;
+}
+.darkmode #trocar-tema img:first-child {
+    display: none;
+}
+.darkmode #trocar-tema img:last-child {
+    display: block;
+}
+
+@media screen and (min-width:700px) {
+    #trocar-tema {
+        right: 2%;
+        position: absolute;
+    }
+}
