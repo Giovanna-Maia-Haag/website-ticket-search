@@ -1,7 +1,7 @@
 .banner-principal {
    height: 35.0rem;
    display: flex;
-   background-image: url('..//Images/RJ.png');
+   background-image: url('..//RJ.png');
    background-position: left;
    background-size: cover;
    justify-content: center;
